@@ -37,7 +37,7 @@ def test_write_main():
 
         client = TestClient(app=app)
 
-        todo_content = "do somthing new"
+        todo_content = "new item"
 
         response = client.post("/todos/create_todo",
             json={"content": todo_content}
